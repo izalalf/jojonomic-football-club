@@ -189,7 +189,7 @@ h3 {
 	color: #17b1d8;
 }
 .content-jojonomic {
-	padding: 1em 0 4em 0;
+	padding: 1em 0 1em 0;
 }
 
 .content-table {
@@ -226,7 +226,7 @@ h3 {
 }
 
 @media screen and (max-width: 480px) {
-	
+
 	.content-table tbody tr:nth-of-type(even) {
 		background-color: #fff;
 	}
@@ -261,3 +261,53 @@ h3 {
 	}
 
 }
+
+/* ----------------------------------------------------------- */
+
+/* Footer Football */
+
+#footer {
+	background: #ffffff;
+	text-align: center;
+	color: #fff;
+	background-color: #17b1d8;
+	border-radius: 4px 4px 0 0;
+}
+	#footer .copyright {
+		display: inline-block;
+		color: #fff;
+		font-size: 0.75em;
+		padding: 0;
+		text-align: center;
+		padding: 2em 10em;
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#footer {
+			padding: 1em 0 1em 0;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#footer .copyright {
+			padding: 0em 4em;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#footer {
+			padding: 0.1em 0 0.1em 0;
+		}
+
+			#footer .copyright {
+				padding: 2em 0;
+			}
+
+	}
+
+/* ----------------------------------------------------------- */
