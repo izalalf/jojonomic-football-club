@@ -1,1 +1,60 @@
+/* Header */
 
+#header {
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	background: #fff;
+	cursor: default;
+	height: 4em;
+	left: 0;
+	line-height: 4em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10001;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.075);
+	text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+
+	body {
+		padding-top: 44px;
+	}
+
+	#header {
+		height: 4em;
+		line-height: 4em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	#header {
+		min-width: 320px;
+		padding-top: 0px;
+		height: 3em;
+	}
+
+	img{
+		width: 400px;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	#header {
+		min-width: 300px;
+		padding-top: 0px;
+		height: 3em;
+		text-align: center;
+	}
+
+	img{
+		width: 300px;
+	}
+
+}
