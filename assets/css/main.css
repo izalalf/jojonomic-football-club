@@ -39,6 +39,27 @@ html, body, div, span, h3, p, em, img, b, u, i, ol, ul, li, footer, header, menu
 		height: 4em;
 		line-height: 4em;
 	}
+
+	img{
+		width: 450px;
+	}
+}
+
+@media screen and (max-width: 736px) {
+
+	body {
+		padding-top: 44px;
+	}
+
+	#header {
+		height: 3em;
+		line-height: 4em;
+	}
+
+	img{
+		width: 400px;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -71,6 +92,7 @@ html, body, div, span, h3, p, em, img, b, u, i, ol, ul, li, footer, header, menu
 }
 
 /* ------------------------------------------------------------- */
+
 
 /* Banner Football */
 
@@ -113,6 +135,10 @@ html, body, div, span, h3, p, em, img, b, u, i, ol, ul, li, footer, header, menu
 			padding: 10em 6em 6em 6em;
 		}
 
+		img{
+			width: 400px;
+		}
+
 	}
 
 	@media screen and (max-width: 480px) {
@@ -121,12 +147,20 @@ html, body, div, span, h3, p, em, img, b, u, i, ol, ul, li, footer, header, menu
 			padding: 8em 3em 6em 3em;
 		}
 
+		img{
+			width: 350px;
+		}
+
 	}
 
 	@media screen and (max-width: 400px) {
 
 		#banner {
 			padding: 6em 3em 6em 3em;
+		}
+
+		img{
+			width: 250px;
 		}
 
 	}
@@ -140,3 +174,90 @@ html, body, div, span, h3, p, em, img, b, u, i, ol, ul, li, footer, header, menu
 	}
 
 /* -------------------------------------------------------------- */
+
+/* Content Football Jojonomic */
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	color: #17b1d8;
+}
+.content-jojonomic {
+	padding: 1em 0 4em 0;
+}
+
+.content-table {
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.8em;
+	min-width: 400px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-table thead tr {
+	background-color: #17b1d8;
+	color: #fff;
+	text-align: left;
+	font-weight: bold;
+}
+
+.content-table th, .content-table td {
+	padding: 12px 15px;
+}
+
+.content-table tbody tr {
+	border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+	border-bottom: 2px solid #17b1d8;
+}
+
+@media screen and (max-width: 480px) {
+	
+	.content-table tbody tr:nth-of-type(even) {
+		background-color: #fff;
+	}
+
+	.content-table thead {
+		display: none;
+	}
+
+	.content-table, .content-table tbody, .content-table tr, .content-table td {
+		display: block;
+		width: 100%;
+	}
+
+	.content-table tr{
+		margin-bottom: 5px;
+	}
+
+	.content-table td{
+		padding-left: 50%;
+		position: relative;
+	}
+
+	.content-table td:before{
+		content: attr(data-label);
+		position: absolute;
+		left: 0;
+		width: 50%;
+		padding-left: 15px;
+		font-size: 15px;
+		font-weight:bold ;
+		text-align: left;
+	}
+
+}
