@@ -1,3 +1,14 @@
+/* Default */
+
+html, body, div, span, h3, p, em, img, b, u, i, ol, ul, li, footer, header, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 /* Header */
 
 #header {
@@ -58,3 +69,74 @@
 	}
 
 }
+
+/* ------------------------------------------------------------- */
+
+/* Banner Football */
+
+#banner {
+	padding: 30em 0 12em 0;
+	background-image: url(../../images/football.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+	#banner .content {
+		-moz-transition: opacity 1s ease-in-out, -moz-transform 0.75s ease-in-out;
+		-webkit-transition: opacity 1s ease-in-out, -webkit-transform 0.75s ease-in-out;
+		-ms-transition: opacity 1s ease-in-out, -ms-transform 0.75s ease-in-out;
+		transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
+		opacity: 1;
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#banner {
+			padding: 20em 0em 10em 0em;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#banner {
+			padding: 20em 4em 4em 4em;
+		}
+
+	}
+
+	@media screen and (max-width: 650px) {
+
+		#banner {
+			padding: 10em 6em 6em 6em;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#banner {
+			padding: 8em 3em 6em 3em;
+		}
+
+	}
+
+	@media screen and (max-width: 400px) {
+
+		#banner {
+			padding: 6em 3em 6em 3em;
+		}
+
+	}
+
+	body.is-loading #banner .content {
+		opacity: 0;
+		-moz-transform: translateY(1em);
+		-webkit-transform: translateY(1em);
+		-ms-transform: translateY(1em);
+		transform: translateY(1em);
+	}
+
+/* -------------------------------------------------------------- */
